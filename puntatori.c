@@ -38,7 +38,7 @@ void main() {
     void main() {
         int n = 5;
         int a[n], * p;
-        p = a;
+        p = a;  //si possono fare i cicli per i VLA con questo metodo?
 
         printf("l'indirizzo diretto di a e' %d\n", &a);  //i due printf stampano lo stesso valore
         printf("l'indirizzo tramite p di a e' %d\n", p);
