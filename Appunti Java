@@ -1,0 +1,97 @@
+19/02/18 Java
+
+
+scarica utils per esame
+
+guarda Quiz su elearning nella sezione Lezioni
+
+appunti slide:
+- caratteristiche principali di java: sicurezza & portabilità
+- java library è troppo grande, non si può conoscere interamente
+
+pag 16 prima slide
+classe: Buongiorno
+definito dall'attributo class, public, di accesso pubblico
+, la classe ha un metodo ( main ) 
+-la classe contentente main permette di eseguire il programma
+
+come printf in C , in java si ha : System.out.prinln("messaggio");
+println è il metodo, "messaggio" è la stringa che stampo,
+stringa è oggetto con sequenza di caratteri.
+println : stampa stringa e va a capo
+print : stampa una stringa e basta
+
+Classe: contenitore con al suo interno variabili e metodi,
+un metodo contiene sequenze di istruzioni che fanno riferimento ad una classe e sono eseguibili solo all'interno della classe
+
+Metodo: per svolgere compiti più semplici possibili, 
+si vuole fare tante classi con metodi per svolgere diverse operazioni -> ogni metodo non deve essere troppo lungo, se succede creo un metodo che dipende da un altro ( tipo funzione che chiama una seconda funzione.)
+
+ogni applicazione contiene diverse classi e una di queste deve contenere il metodo main, che permette l'avvio
+
+
+PUBLIC: parola riservata -> non la uso per una mia variabie,
+							usata per definire le classi
+
+CLASS: parola riservata -> indica che il nome dopo sarà il nome della classe
+
+PUBLIC STATIC VOID MAIN (String args[]) ;
+void : il metodo non ritorna niente
+
+ogni istruzione deve finire con il " ; "
+
+il nome del file java deve essere lo stesso della classe public
+
+classi hanno iniziale del nome Maiuscola e nomi dei metodi con iniziale minuscolo
+
+// INIZIO ESEGUIRE DA RIGA DI COMANDO//
+
+-->PER AVVIARE DA RIGA DI COMANDO ( programma Buongiorno.java)
+	javac Buongiorno.java  (dove Buongiorno è il nome della classe)
+	; aggiungo ".java" per compilare il programma
+
+
+--> javac Buongiorno (esegue il programma e stampa/fa quello che c'è scritto)
+
+--> ogni volta che modifico qualcosa, devo ricompilare anche da stringa, altrimenti eseguirà la penultima versione
+
+// FINE ESEGUIRE DA RIGA DI COMANDO//
+
+nel caso il programma tenti di "uscire" dalla memoria a lui dedicata, la java virtual machine, lo stoppa
+
+POSSO USARE WORD PER SCRIVERE IN JAVA: SI MA POI DEVO SALVARE I FILE COME "PLAIN TEXT"
+
+COSA SUCCEDE QUANDO CARICO UN FILE .CLASS IN UN EDITOR DI TESTO? 
+VEDRò UNA SEQUENZA DI CARATTERI ASCII E NUMERI BINARI
+
+debugger: strumento che permette di eseguire passo passo il programma per : vedere ad ogni momento cosa contengono le variabili e così si può trovare la riga esatta di dove si trova l'errore
+
+compile time error: violazioni delle regole del linguaggio di programmazione, sabaglio a scrivere delle istruzioni
+
+run time error: errore che si trova durante l'esecuzione del programma, di solito produce un risultato diverso da quello che si voleva, possono essere errori tipo "LOGIC ERROR" (causati da  divisioni per 0)
+
+SE ESEGUE MA DA UN PROBLEMA SARà : RUNTIME ERROR
+
+//QUANDO ESEGUE CREA UN FILE .CLASS //
+
+un metodo può essere chiamato da un oggetto come:
+System.out.println(" ciao");
+dove system.out è l'oggetto e println è il metodo chiamato
+
+CLASSE: rappresenta insieme di oggetti simili
+
+
+//INIZIO ESEMPIO SLIDE 41//
+
+Assistant assisente; //creo una variabile  assistente
+
+assistente= new Assistant(qui ci sono attributi di ingresso),
+creo l'oggetto assistente del tipo Assistant 
+
+assistente.saluta(); //invoco il metodo saluta
+
+//FINE ESEMPIO SLIDE 41//
+
+
+
+
